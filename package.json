@@ -5,18 +5,18 @@
   "description": "Wish Zone is a one stop shop for all your wish granting needs. This is a store based off the popular manga series Dragon Ball where you can purchase dragonballs to call upon Shenron to grant your wish.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
+    "start": "nodemon --watch backend --exec node --experimental-modules server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Vsparker/wish-zone.git"
+    "url": "git+https://github.com/Vsparker/wishzone-backend.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/"
   },
-  "homepage": "https://github.com/Vsparker/wish-zone",
+  "homepage": "https://github.com/Vsparker/wishzone-backend",
   "dependencies": {
     "bcrypt": "^5.0.0",
     "dotenv": "^8.2.0",
