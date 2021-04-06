@@ -5,7 +5,9 @@
   "description": "Wish Zone is a one stop shop for all your wish granting needs. This is a store based off the popular manga series Dragon Ball where you can purchase dragonballs to call upon Shenron to grant your wish.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --watch backend --exec node --experimental-modules server.js"
+    "start": "nodemon --watch backend --exec node --experimental-modules server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix reactFolderName && npm run build --prefix reactFolderName"
+
   },
   "repository": {
     "type": "git",
