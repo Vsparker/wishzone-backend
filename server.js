@@ -7,7 +7,7 @@ import userRouter from './routers/userRouter.js';
 import orderRouter from './routers/orderRouter.js';
 import uploadRouter from './routers/uploadRouter.js';
 
-const config = require('dotenv').config()
+dotenv.config();	
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -34,6 +34,7 @@ app.get('*', (req, res) => res.sendFile(path.join(__dirname, '/frontend/build/in
 // app.get('/', (req, res) => {
 //   res.send('Server is ready');
 // });
+
 app.use((err, req, res, next) => {
 	res.status(500).send({ message: err.message });
 });
